@@ -1,0 +1,16 @@
+public class Kata {
+  public static int lostSheeps(int[] fridayNightCounting, int[] saturdayNightCounting, int sheepsTotal) {
+    int fnc =0;
+    int snc = 0;
+    
+    for(int i = 0; i < fridayNightCounting.length; i++) {
+      fnc += fridayNightCounting[i]; 
+    }
+    
+    for(int i = 0; i < saturdayNightCounting.length; i++) {
+      snc += saturdayNightCounting[i]; 
+    }
+    
+    return sheepsTotal - (fnc + snc);
+  }
+}
